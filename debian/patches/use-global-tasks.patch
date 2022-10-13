@@ -1,0 +1,22 @@
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -67,14 +67,14 @@
+   grunt.loadTasks('tasks');
+ 
+   // These plugins provide necessary tasks.
+-  grunt.loadNpmTasks('grunt-contrib-clean');
+-  grunt.loadNpmTasks('grunt-contrib-jshint');
+-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
+-  grunt.loadNpmTasks('grunt-contrib-internal');
++  grunt.loadNpmTasks('grunt-contrib-clean','/usr/lib/nodejs');
++  //grunt.loadNpmTasks('grunt-contrib-jshint','/usr/lib/nodejs');
++  grunt.loadNpmTasks('grunt-contrib-nodeunit','/usr/lib/nodejs');
++  grunt.loadNpmTasks('grunt-contrib-internal','/usr/lib/nodejs');
+ 
+   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
+   // plugin's task(s), then test the result.
+-  grunt.registerTask('test', ['clean', 'jshint', 'requirejs', 'nodeunit']);
++  grunt.registerTask('test', ['clean', 'requirejs', 'nodeunit']);
+ 
+   // By default, lint and run all tests.
+   grunt.registerTask('default', ['test', 'build-contrib']);

@@ -1,0 +1,34 @@
+node-grunt-contrib-requirejs (1.0.0-4) unstable; urgency=medium
+
+  * Bump debhelper from old 12 to 13.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Sep 2021 09:53:46 +0100
+
+node-grunt-contrib-requirejs (1.0.0-3) unstable; urgency=low
+
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 28 Aug 2021 23:42:50 +0100
+
+node-grunt-contrib-requirejs (1.0.0-2) unstable; urgency=medium
+
+  [ Andrius Merkys ]
+  * Team upload.
+  * Enabling build time tests.
+  * Removing leftover temporary directory in debian/rules.
+  * Updating Vcs-* tags.
+  * Installing files in /usr/share/nodejs instead of /usr/lib/nodejs.
+  * Bumping debhelper compat level (no changes).
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 04 Feb 2020 01:37:46 -0500
+
+node-grunt-contrib-requirejs (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #847367)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 07 Dec 2016 20:58:57 +0530
