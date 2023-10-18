@@ -1,3 +1,51 @@
+node-grunt-contrib-requirejs (1.0.0-8) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * Disable auto-build (Closes: #1026706)
+
+ -- Yadd <yadd@debian.org>  Mon, 02 Jan 2023 07:41:05 +0400
+
+node-grunt-contrib-requirejs (1.0.0-7) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Wrap long lines in changelog entries: 1.0.0-6.
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 01:38:33 +0000
+
+node-grunt-contrib-requirejs (1.0.0-6) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-grunt-contrib-requirejs: Add Multi-Arch:
+    foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 12:16:51 +0000
+
+node-grunt-contrib-requirejs (1.0.0-5) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-requirejs.
+    + node-grunt-contrib-requirejs: Drop versioned constraint on
+      node-requirejs in Depends.
+
+  [ Yadd ]
+  * Add missing build dependency on dh addon.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 20:23:39 +0100
+
 node-grunt-contrib-requirejs (1.0.0-4) unstable; urgency=medium
 
   * Bump debhelper from old 12 to 13.
